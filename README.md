@@ -1,24 +1,22 @@
 # WADwebsite-187-
-An interactive flight search and booking web application built using pure HTML, CSS and JavaScript.
- Sky Travels: A Flight Booking Website
-
+Sky Travels-
 A responsive, interactive flight search and ticket booking web application built entirely with vanilla HTML, CSS and JavaScript (no external frameworks or libraries) as part of a college web application development assignment.
 
-Course Information
+*Course Information
 Course: BTech CSE, Web Application Development (BCS102)
 Submitted By: Shefali Bhardwaj [18701012026]
 
-Key Features
+*Key Features
 Flight Search & Filtering: Search flights by departure city, destination, travel date and passenger count.
 Interactive Seat Selection / Booking Form: Form validation for passenger details and instant booking confirmation alert box.
 Responsive Design: Adapts cleanly across desktop, tablet, and mobile screens.
 
-Technologies Used
+*Technologies Used
 HTML5: Semantic structure and booking forms
 CSS3: Flexbox/Grid layouts, styling, and responsive media queries
 JavaScript (ES6): DOM manipulation, dynamic search filtering, price calculation, and form validation
 
-How to Run Locally
+*How to Run Locally
 Because this project uses only frontend technologies, no server or package installation is required:
 
 1. Clone or download this repository:
