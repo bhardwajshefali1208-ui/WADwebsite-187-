@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Travels - Flight Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>🛫Sky Travels</h2>
+        <div>
+            <span>LIVE LOVE VOYAGE!</span>
+            <span id="today"></span>
+        </div>
+    </header>
+    <main>
+        <section class="search-box">
+            <h1>Find Your Perfect Flight</h1>
+            <p>Compare flights and find the best deals.</p>
+            <div class="trip-type">
+                <label>
+                    <input type="radio" name="trip" value="oneway" checked>
+                    One Way
+                </label>
+
+                <label>
+                    <input type="radio" name="trip" value="round">
+                    Round Trip
+                </label>
+            </div>
+
+            <div class="form-grid">
+                <div class="route-fields">
+                    <div>
+                        <label>From</label>
+                        <input type="text" id="from" placeholder="e.g. Delhi">
+                    </div>
+                        <button type="button" id="swap-btn">⇄</button>
+                    <div>
+                        <label>To</label>
+                        <input type="text" id="to" placeholder="e.g. Mumbai">
+                    </div>
+                </div>
+
+                <div>
+                    <label>Departure Date</label>
+                    <input type="date" id="departure">
+                </div>
+
+                <div id="return-field" class="hidden">
+                    <label>Return Date</label>
+                    <input type="date" id="return-date">
+                </div>
+
+                <div>
+                    <label>Travellers</label>
+                    <select id="travellers">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Class</label>
+                    <select id="travel-class">
+                        <option>Economy</option>
+                        <option>Premium Economy</option>
+                        <option>Business</option>
+                        <option>First Class</option>
+                    </select>
+                </div>
+
+            </div>
+            <button id="search-btn">SEARCH FLIGHTS</button>
+        </section>
+
+        <section id="results" class="results hidden">
+            <h2>Available Flights</h2>
+            <div class="highlights">
+                <div>
+                    <span>Cheapest Flight</span>
+                    <h3 id="cheapest">--</h3>
+                </div>
+                <div>
+                    <span>Fastest Flight</span>
+                    <h3 id="fastest">--</h3>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Filters</h3>
+                <label>
+                    <input type="checkbox" id="nonstop">
+                    Non-stop
+                </label>
+                <label>
+                    <input type="checkbox" class="airline" value="IndiGo">
+                    IndiGo
+                </label>
+                <label>
+                    <input type="checkbox" class="airline" value="SpiceJet">
+                    SpiceJet
+                </label>
+                <label>
+                    <input type="checkbox" class="airline" value="Air India">
+                    Air India
+                </label>
+
+                <label>Departure Time</label>
+                <select id="time-filter">
+                    <option value="all">Any Time</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                </select>
+
+                <label>Sort By</label>
+                <select id="sort">
+                    <option value="default">Recommended</option>
+                    <option value="price">Price: Low to High</option>
+                    <option value="duration">Shortest Duration</option>
+                </select>
+
+            </div>
+            <div id="flight-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 SkyTravels | Wishing you a Happy Journey | From Shefali Bhardwaj</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
